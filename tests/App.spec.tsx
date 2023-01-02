@@ -2,10 +2,10 @@ import { render, screen } from "@testing-library/react";
 
 import { App } from "../src/App";
 
-test("App component display header", () => {
+test("App dashboard display", () => {
 	render(<App />);
 
-	const heading = screen.getByText(/🌱⚛️ Create React App Codely template example/i);
+	const span = screen.getByText(/🌸 Anime Dashboard/i);
 
-	expect(heading).toBeInTheDocument();
+	expect(span).toBeInTheDocument();
 });
