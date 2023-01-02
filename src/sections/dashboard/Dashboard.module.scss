@@ -1,0 +1,135 @@
+:root {
+    --header-height: 2.65rem;
+    --banner-height: 49.3rem;
+    --widget-width: 222px;
+}
+
+.header {
+    height: var(--header-height);
+
+    &__container {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0.5rem;
+    }
+}
+
+.empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - var(--header-height));
+    font-size: 1.5rem;
+}
+
+.app__brand {
+    color: #C6FAFD;
+    font-style: italic;
+    font-size: 1em;
+    margin-block-start: 0.25em;
+    margin-block-end: 0.25em;
+}
+
+.banner {
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5rem;
+    border-radius: 15px;
+    background-color: #21162E;
+    height: var(--banner-height);
+
+    &__svg {
+        position: absolute;
+        border-radius: 15px;
+    }
+}
+
+.sidebar_container {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    color: #C6FAFD;
+    background-color: #2A1C3C;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+    margin-top: 50px;
+    width: 222px;
+    height: 94.5%;
+    margin-right: 4px;
+}
+
+.container {
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5rem;
+    border-radius: 15px;
+    background-color: #21162E;
+}
+
+.widgets_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--widget-width));
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.7rem;
+    border-radius: 15px;
+    background-color: #21162E;
+    min-height: 300px;
+    justify-content: center;
+}
+
+.widget {
+    display: flex;
+    flex-direction: column;
+    color: #C6FAFD;
+    background-color: #2A1C3C;
+    filter: drop-shadow(10px 10px 20px rgb(0 0 0 / 25%));
+    border-radius: 15px;
+    height: 420px;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.1rem;
+        margin: 0 auto;
+    }
+
+    &__title {
+        overflow: hidden;
+        font-weight: bold;
+        font-size: 0.875rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &__body {
+        flex: 1;
+        padding: 0.5rem;
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0.5rem;
+        margin: 0 auto;
+    }
+}
