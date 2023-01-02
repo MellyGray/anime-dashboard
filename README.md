@@ -1,11 +1,11 @@
 <h1 align="center">
-  👋️ Anime dashboard app
+  🌸 Anime dashboard app
 </h1>
 
 <p align="center">
   App to show some anime recommendations and learn React.js.
   <br />
-  Results are scrapped by <a href="https://docs.api.jikan.moe/">Jikan API</a>
+  Results are scrapped with <a href="https://docs.api.jikan.moe/">Jikan API</a>
   <br />
   App created with the <a href="https://github.com/CodelyTV/cra-template-codely">🌱⚛️ Create React App Codely template</a> 
 </p>
