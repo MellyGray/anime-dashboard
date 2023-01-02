@@ -7,6 +7,8 @@
   <br />
   Results are scrapped with <a href="https://docs.api.jikan.moe/">Jikan API</a>
   <br />
+  UI UX Design generated with <a href="https://midjourney.com">Midjourney IA</a>
+  <br />
   App created with the <a href="https://github.com/CodelyTV/cra-template-codely">🌱⚛️ Create React App Codely template</a> 
 </p>
 
