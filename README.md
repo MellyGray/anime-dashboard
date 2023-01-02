@@ -4,10 +4,10 @@
 
 <p align="center">
   App to show some anime recommendations and learn React.js.
-  Results are scrapped by [Jikan API](https://docs.api.jikan.moe/)
+  <br />
+  Results are scrapped by <a href="https://docs.api.jikan.moe/">Jikan API</a>
+  <br />
   App created with the <a href="https://github.com/CodelyTV/cra-template-codely">🌱⚛️ Create React App Codely template</a> 
-  <br />
-  <br />
 </p>
 
 ## 🚀 Run the app
