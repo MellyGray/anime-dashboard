@@ -3,11 +3,6 @@
 </h1>
 
 <p align="center">
-    <a href="https://github.com/MellyGray/anime-dashboard/actions/workflows/ci.yml"><img src="https://github.com/MellyGray/anime-dashboard/actions/workflows/ci.yml/badge.svg" alt="Build status"/></a>
-    <a href="https://github.com/MellyGray"><img src="https://img.shields.io/badge/CodelyTV-OS-green.svg?style=flat-square" alt="Codely Open Source"/></a>
-</p>
-
-<p align="center">
   App created with the <a href="https://github.com/CodelyTV/cra-template-codely">🌱⚛️ Create React App Codely template</a> 
   <br />
   <br />
