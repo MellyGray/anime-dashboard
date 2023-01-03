@@ -1,0 +1,135 @@
+:root {
+  --header-height: 2.65rem;
+  --banner-height: 49.3rem;
+  --widget-width: 222px;
+}
+
+.header {
+  height: var(--header-height);
+
+  &__container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5rem;
+  }
+}
+
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - var(--header-height));
+  font-size: 1.5rem;
+}
+
+.app__brand {
+  color: #c6fafd;
+  font-size: 1em;
+  font-style: italic;
+  margin-block-start: 0.25em;
+  margin-block-end: 0.25em;
+}
+
+.banner {
+  gap: 1rem;
+  max-width: 1200px;
+  height: var(--banner-height);
+  margin: 0 auto;
+  padding: 0.5rem;
+  background-color: #21162e;
+  border-radius: 15px;
+
+  &__svg {
+    position: absolute;
+    border-radius: 15px;
+  }
+}
+
+.sidebar_container {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 222px;
+  height: 94.5%;
+  margin-top: 50px;
+  margin-right: 4px;
+  color: #c6fafd;
+  background-color: #2a1c3c;
+  border-radius: 15px;
+  filter: drop-shadow(10px 10px 20px rgb(0 0 0 / 25%));
+}
+
+.container {
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  background-color: #21162e;
+  border-radius: 15px;
+}
+
+.widgets_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--widget-width));
+  gap: 1rem;
+  justify-content: center;
+  max-width: 1200px;
+  min-height: 300px;
+  margin: 0 auto;
+  padding: 0.7rem;
+  background-color: #21162e;
+  border-radius: 15px;
+}
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+  color: #c6fafd;
+  background-color: #2a1c3c;
+  border-radius: 15px;
+  filter: drop-shadow(10px 10px 20px rgb(0 0 0 / 25%));
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0.1rem;
+  }
+
+  &__title {
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__body {
+    flex: 1;
+    padding: 0.5rem;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0.5rem;
+  }
+}
