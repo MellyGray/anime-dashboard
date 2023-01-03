@@ -1,3 +1,4 @@
+import { jikanApiResponses } from "../../jikan_api_responses";
 import { ReactComponent as Banner } from "./anime-banner.svg";
 import styles from "./Dashboard.module.scss";
 
@@ -27,61 +28,31 @@ export function Dashboard() {
 					</div>
 				</div>
 				<div className={styles.widgets_container}>
-					<article className={styles.widget}>
-						<header className={styles.widget__header}>
-							<h2 className={styles.widget__title}>Widget heading 1</h2>
-						</header>
-						<div className={styles.widget__body}>
-							<span className={styles.widget__text}>Image</span>
-						</div>
-						<footer className={styles.widget__footer}>
-							<span className={styles.widget__text}>Footer</span>
-						</footer>
-					</article>
-					<article className={styles.widget}>
-						<header className={styles.widget__header}>
-							<h2 className={styles.widget__title}>Widget heading 2</h2>
-						</header>
-						<div className={styles.widget__body}>
-							<span className={styles.widget__text}>Image</span>
-						</div>
-						<footer className={styles.widget__footer}>
-							<span className={styles.widget__text}>Footer</span>
-						</footer>
-					</article>
-					<article className={styles.widget}>
-						<header className={styles.widget__header}>
-							<h2 className={styles.widget__title}>Widget heading 3</h2>
-						</header>
-						<div className={styles.widget__body}>
-							<span className={styles.widget__text}>Image</span>
-						</div>
-						<footer className={styles.widget__footer}>
-							<span className={styles.widget__text}>Footer</span>
-						</footer>
-					</article>
-					<article className={styles.widget}>
-						<header className={styles.widget__header}>
-							<h2 className={styles.widget__title}>Widget heading 4</h2>
-						</header>
-						<div className={styles.widget__body}>
-							<span className={styles.widget__text}>Image</span>
-						</div>
-						<footer className={styles.widget__footer}>
-							<span className={styles.widget__text}>Footer</span>
-						</footer>
-					</article>
-					<article className={styles.widget}>
-						<header className={styles.widget__header}>
-							<h2 className={styles.widget__title}>Widget heading 5</h2>
-						</header>
-						<div className={styles.widget__body}>
-							<span className={styles.widget__text}>Image</span>
-						</div>
-						<footer className={styles.widget__footer}>
-							<span className={styles.widget__text}>Footer</span>
-						</footer>
-					</article>
+					{jikanApiResponses.data.map((widget) => (
+						<article className={styles.widget} key={widget.mal_id}>
+							<header className={styles.widget__header}>
+								<a
+									className={styles.widget__title}
+									href={widget.url}
+									target="_blank"
+									title={widget.title}
+									rel="noreferrer"
+								>
+									<h2 className={styles.widget__title}>{widget.title}</h2>
+								</a>
+							</header>
+							<div className={styles.widget__body}>
+								<img
+									src={widget.images.jpg.image_url}
+									alt={widget.title}
+									className={styles.widget__image}
+								></img>
+							</div>
+							<footer className={styles.widget__footer}>
+								<span className={styles.widget__text}>Score {widget.score}</span>
+							</footer>
+						</article>
+					))}
 				</div>
 			</div>
 		</>
