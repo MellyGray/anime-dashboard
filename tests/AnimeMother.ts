@@ -8,7 +8,7 @@ export class AnimeMother {
 			id: faker.datatype.number(),
 			url: faker.internet.url(),
 			title: faker.random.words(3),
-			image_url: faker.image.cats(),
+			imageUrl: faker.image.cats(),
 			score: faker.datatype.number(),
 			...params,
 		};
