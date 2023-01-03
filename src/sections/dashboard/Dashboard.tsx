@@ -1,8 +1,9 @@
+import { AnimeRepository } from "../../domain/AnimeRepository";
 import { jikanApiResponses } from "../../jikan_api_responses";
 import { ReactComponent as Banner } from "./anime-banner.svg";
 import styles from "./Dashboard.module.scss";
 
-export function Dashboard() {
+export function Dashboard({ animeRepository }: { animeRepository: AnimeRepository }) {
 	return (
 		<>
 			<header className={styles.header}>
