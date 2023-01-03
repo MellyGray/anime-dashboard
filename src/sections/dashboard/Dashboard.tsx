@@ -29,7 +29,7 @@ export function Dashboard() {
 				<div className={styles.widgets_container}>
 					<article className={styles.widget}>
 						<header className={styles.widget__header}>
-							<h2 className={styles.widget__title}>Header</h2>
+							<h2 className={styles.widget__title}>Widget heading 1</h2>
 						</header>
 						<div className={styles.widget__body}>
 							<span className={styles.widget__text}>Image</span>
@@ -40,7 +40,7 @@ export function Dashboard() {
 					</article>
 					<article className={styles.widget}>
 						<header className={styles.widget__header}>
-							<h2 className={styles.widget__title}>Header</h2>
+							<h2 className={styles.widget__title}>Widget heading 2</h2>
 						</header>
 						<div className={styles.widget__body}>
 							<span className={styles.widget__text}>Image</span>
@@ -51,7 +51,7 @@ export function Dashboard() {
 					</article>
 					<article className={styles.widget}>
 						<header className={styles.widget__header}>
-							<h2 className={styles.widget__title}>Header</h2>
+							<h2 className={styles.widget__title}>Widget heading 3</h2>
 						</header>
 						<div className={styles.widget__body}>
 							<span className={styles.widget__text}>Image</span>
@@ -62,7 +62,7 @@ export function Dashboard() {
 					</article>
 					<article className={styles.widget}>
 						<header className={styles.widget__header}>
-							<h2 className={styles.widget__title}>Header</h2>
+							<h2 className={styles.widget__title}>Widget heading 4</h2>
 						</header>
 						<div className={styles.widget__body}>
 							<span className={styles.widget__text}>Image</span>
@@ -73,7 +73,7 @@ export function Dashboard() {
 					</article>
 					<article className={styles.widget}>
 						<header className={styles.widget__header}>
-							<h2 className={styles.widget__title}>Header</h2>
+							<h2 className={styles.widget__title}>Widget heading 5</h2>
 						</header>
 						<div className={styles.widget__body}>
 							<span className={styles.widget__text}>Image</span>
