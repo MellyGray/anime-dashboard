@@ -16,7 +16,7 @@ export class JikanApiAnimeRepository implements AnimeRepository {
 						id: anime.mal_id,
 						url: anime.url,
 						title: anime.title,
-						imageUrl: anime.images[0].image_url,
+						imageUrl: anime.images.jpg.image_url,
 						score: anime.score,
 					};
 				});
