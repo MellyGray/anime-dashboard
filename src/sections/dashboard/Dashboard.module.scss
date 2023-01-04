@@ -18,11 +18,11 @@
 }
 
 .empty {
-  color: #c6fafd;
   display: flex;
   align-items: center;
   justify-content: center;
   height: calc(100vh - var(--header-height) - var(--banner-height));
+  color: #c6fafd;
   font-size: 1.5rem;
 }
 
