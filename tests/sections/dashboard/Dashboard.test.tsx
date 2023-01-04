@@ -1,9 +1,10 @@
-import { render, screen } from "@testing-library/react";
+import { screen } from "@testing-library/react";
 import { mock } from "jest-mock-extended";
 
 import { AnimeRepository } from "../../../src/domain/AnimeRepository";
 import { Dashboard } from "../../../src/sections/dashboard/Dashboard";
 import { AnimeMother } from "../../AnimeMother";
+import { renderWithRouter } from "../../renderWithRouter";
 
 const mockAnimeRepository = mock<AnimeRepository>();
 
@@ -13,7 +14,7 @@ describe("Dashboard section", () => {
 
 		mockAnimeRepository.search.mockResolvedValue([anime]);
 
-		render(<Dashboard animeRepository={mockAnimeRepository}></Dashboard>);
+		renderWithRouter(<Dashboard animeRepository={mockAnimeRepository}></Dashboard>);
 
 		const firstWidgetTitle = anime.title;
 		const firstWidgetHeader = await screen.findByRole("heading", {
@@ -26,7 +27,7 @@ describe("Dashboard section", () => {
 	it("show no anime results message when there are no widgets", async () => {
 		mockAnimeRepository.search.mockResolvedValue([]);
 
-		render(<Dashboard animeRepository={mockAnimeRepository}></Dashboard>);
+		renderWithRouter(<Dashboard animeRepository={mockAnimeRepository}></Dashboard>);
 
 		const noResults = await screen.findByText(new RegExp("There are no animes results", "i"));
 
