@@ -22,4 +22,14 @@ describe("Dashboard section", () => {
 
 		expect(firstWidgetHeader).toBeInTheDocument();
 	});
+
+	it("show no anime results message when there are no widgets", async () => {
+		mockAnimeRepository.search.mockResolvedValue([]);
+
+		render(<Dashboard animeRepository={mockAnimeRepository}></Dashboard>);
+
+		const noResults = await screen.findByText(new RegExp("There are no animes results", "i"));
+
+		expect(noResults).toBeInTheDocument();
+	});
 });
