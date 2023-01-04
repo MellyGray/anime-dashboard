@@ -12,6 +12,8 @@
   App created with the <a href="https://github.com/CodelyTV/cra-template-codely">🌱⚛️ Create React App Codely template</a> 
 </p>
 
+![image](https://user-images.githubusercontent.com/23359572/210627125-29b29218-46eb-4861-9ebf-eeb6993a9dbf.png)
+
 ## 🚀 Run the app
 
 - `npm install`: Install dependencies
@@ -46,3 +48,7 @@
 - [Makefile](https://github.com/CodelyTV/cra-template-codely/blob/main/template/Makefile) for standardize how to run projects
 - [Sass](https://sass-lang.com) to supercharge CSS with nested classes and more fun
 - [.editorconfig](https://editorconfig.org) for sharing the IDE config
+
+## 🔀 Related information
+The UX UI design was generated with <a href="https://midjourney.com">Midjourney IA</a> This was the original image
+![melina hernandez_website_dashboard_ux_ui_anime_list_58814a7b-52e2-4f88-be64-34bf8d99680d](https://user-images.githubusercontent.com/23359572/210626965-33d5fd9f-33b7-4ce6-8f07-fe8ffaf336b9.png)
