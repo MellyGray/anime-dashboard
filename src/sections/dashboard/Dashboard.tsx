@@ -1,9 +1,11 @@
 import { AnimeRepository } from "../../domain/AnimeRepository";
-import { jikanApiResponses } from "../../jikan_api_responses";
 import { ReactComponent as Banner } from "./anime-banner.svg";
 import styles from "./Dashboard.module.scss";
+import { useAnimes } from "./useAnimes";
 
 export function Dashboard({ animeRepository }: { animeRepository: AnimeRepository }) {
+	const { animes } = useAnimes(animeRepository);
+
 	return (
 		<>
 			<header className={styles.header}>
@@ -29,8 +31,8 @@ export function Dashboard({ animeRepository }: { animeRepository: AnimeRepositor
 					</div>
 				</div>
 				<div className={styles.widgets_container}>
-					{jikanApiResponses.data.map((widget) => (
-						<article className={styles.widget} key={widget.mal_id}>
+					{animes.map((widget) => (
+						<article className={styles.widget} key={widget.id}>
 							<header className={styles.widget__header}>
 								<a
 									className={styles.widget__title}
@@ -44,7 +46,7 @@ export function Dashboard({ animeRepository }: { animeRepository: AnimeRepositor
 							</header>
 							<div className={styles.widget__body}>
 								<img
-									src={widget.images.jpg.image_url}
+									src={widget.imageUrl}
 									alt={widget.title}
 									className={styles.widget__image}
 								></img>
