@@ -1,6 +1,6 @@
 import { ReactComponent as AnimeBanner } from "./anime-banner.svg";
 import styles from "./Banner.module.scss";
-import { Sidebar } from "./Sidebar";
+import { Sidebar } from "./sidebar/Sidebar";
 
 export function Banner() {
 	return (
