@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  max-width: 1200px;
+  height: var(--banner-height);
+  margin: 0 auto;
+  padding: 0.5rem;
+  background-color: #21162e;
+  border-radius: 15px;
+}
+
+.image {
+  position: absolute;
+  border-radius: 15px;
+}

@@ -1,0 +1,26 @@
+:root {
+  --header-height: 2.65rem;
+  --banner-height: 49.3rem;
+  --widget-width: 222px;
+}
+
+.header {
+  height: var(--header-height);
+
+  &__container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5rem;
+  }
+}
+
+.app__brand {
+  color: #c6fafd;
+  font-size: 1em;
+  font-style: italic;
+  margin-block-start: 0.25em;
+  margin-block-end: 0.25em;
+}
