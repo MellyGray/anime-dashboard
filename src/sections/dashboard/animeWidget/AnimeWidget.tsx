@@ -1,4 +1,4 @@
-import { Anime } from "../../domain/Anime";
+import { Anime } from "../../../domain/Anime";
 import styles from "./AnimeWidget.module.scss";
 
 export function AnimeWidget({ anime }: { anime: Anime }) {

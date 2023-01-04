@@ -1,8 +1,8 @@
 import { AnimeRepository } from "../../domain/AnimeRepository";
-import { AnimeWidget } from "./AnimeWidget";
-import { Banner } from "./Banner";
+import { AnimeWidget } from "./animeWidget/AnimeWidget";
+import { useAnimes } from "./animeWidget/useAnimes";
+import { Banner } from "./banner/Banner";
 import styles from "./Dashboard.module.scss";
-import { useAnimes } from "./useAnimes";
 
 export function Dashboard({ animeRepository }: { animeRepository: AnimeRepository }) {
 	const { animes } = useAnimes(animeRepository);

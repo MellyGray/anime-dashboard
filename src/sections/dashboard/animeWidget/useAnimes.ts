@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-import { Anime } from "../../domain/Anime";
-import { AnimeRepository } from "../../domain/AnimeRepository";
+import { Anime } from "../../../domain/Anime";
+import { AnimeRepository } from "../../../domain/AnimeRepository";
 
 export function useAnimes(repository: AnimeRepository): {
 	animes: Anime[];
