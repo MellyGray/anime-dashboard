@@ -1,5 +1,5 @@
-import { DashboardFactory } from "./sections/dashboard/DashboardFactory";
+import { Router } from "./Router";
 
 export function App() {
-	return DashboardFactory.create();
+	return <Router />;
 }
