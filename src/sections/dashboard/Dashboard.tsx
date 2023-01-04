@@ -8,11 +8,6 @@ export function Dashboard({ animeRepository }: { animeRepository: AnimeRepositor
 
 	return (
 		<>
-			<header className={styles.header}>
-				<section className={styles.header__container}>
-					<h1 className={styles.app__brand}>Anime Dashboard</h1>
-				</section>
-			</header>
 			<div className={styles.container}>
 				<div className={styles.banner}>
 					<Banner className={styles.banner__svg} />
